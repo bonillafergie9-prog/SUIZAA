@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura de Suiza</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+
+        .portada{
+            height:100vh;
+
+            background:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("fondo4.jpg");
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .portada h1{
+            font-size:70px;
+            margin-bottom:20px;
+            text-shadow:4px 4px 10px black;
+        }
+
+        .portada p{
+            max-width:900px;
+            font-size:23px;
+            line-height:1.8;
+            background:rgba(0,0,0,0.4);
+            padding:20px;
+            border-radius:20px;
+        }
+
+
+        .boton{
+            margin-top:35px;
+        }
+
+        .boton a{
+            text-decoration:none;
+            color:white;
+            background:linear-gradient(45deg,#d40000,#ff5e5e);
+            padding:15px 35px;
+            border-radius:40px;
+            font-size:20px;
+            font-weight:bold;
+            transition:0.4s;
+            display:inline-block;
+        }
+
+        .boton a:hover{
+            background:white;
+            color:black;
+            transform:scale(1.1);
+        }
+
+        .contenido{
+            padding:60px 50px;
+            background:white;
+        }
+
+        .contenido h2{
+            text-align:center;
+            color:#c00000;
+            font-size:45px;
+            margin-bottom:40px;
+        }
+
+        .contenido p{
+            font-size:20px;
+            line-height:2;
+            text-align:justify;
+            margin-bottom:30px;
+        }
+
+        .cultura{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:30px;
+            margin-top:40px;
+        }
+
+        .card{
+            width:350px;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+            transition:0.5s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:230px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            color:#c00000;
+            padding:15px;
+            font-size:28px;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        footer{
+            background:#b30000;
+            color:white;
+            text-align:center;
+            padding:20px;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="portada">
+
+        <h1> Cultura de Suiza </h1>
+
+        <p>
+            La cultura suiza es una mezcla fascinante de tradiciones, idiomas,
+            música, gastronomía y costumbres europeas. Suiza posee influencias
+            alemanas, francesas e italianas, lo que hace que su cultura sea muy
+            diversa e interesante. Las personas en Suiza valoran mucho el respeto,
+            la puntualidad, la limpieza y la convivencia.
+        </p>
+
+        <div class="boton">
+            <a href="suizaa.html">REGRESAR</a>
+        </div>
+
+    </section>
+
+    <section class="contenido">
+
+        <h2>Tradiciones y Costumbres</h2>
+
+        <p>
+            En Suiza existen muchas festividades tradicionales donde las personas
+            utilizan trajes típicos, realizan bailes y celebran con música.
+            Además, el país es conocido por sus relojes, chocolates y quesos,
+            elementos que forman parte importante de su identidad cultural.
+        </p>
+
+        <p>
+            Suiza tiene cuatro idiomas oficiales: alemán, francés, italiano y
+            romanche. Esto convierte al país en una nación multicultural donde
+            diferentes tradiciones conviven en armonía. También destacan sus
+            museos, festivales y paisajes naturales.
+        </p>
+
+        <div class="cultura">
+
+            <div class="card">
+
+                <img src="festival.jpg">
+
+                <h3> Música y Festivales</h3>
+
+                <p>
+                    En Suiza se celebran muchos festivales culturales y musicales.
+                    Las personas disfrutan conciertos, danzas tradicionales y
+                    eventos llenos de color y alegría.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="reloj.jpg">
+
+                <h3> Relojes Suizos</h3>
+
+                <p>
+                    Los relojes suizos son famosos por su precisión y elegancia.
+                    Suiza es considerada uno de los países más importantes en la
+                    fabricación de relojes de lujo.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="tradicion.jpg">
+
+                <h3>Tradiciones Alpinas</h3>
+
+                <p>
+                    Muchas tradiciones suizas nacieron en las regiones montañosas
+                    de los Alpes. Allí las personas conservan costumbres antiguas,
+                    comidas típicas y celebraciones especiales.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

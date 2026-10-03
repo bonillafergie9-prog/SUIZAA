@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo en Suiza</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+        }
+
+       
+
+        .portada{
+            height:100vh;
+            background:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("fondo 2.jpg");
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .portada h1{
+            font-size:70px;
+            margin-bottom:20px;
+            text-shadow:4px 4px 10px black;
+        }
+
+        .portada p{
+            max-width:900px;
+            font-size:23px;
+            line-height:1.8;
+            background:rgba(0,0,0,0.4);
+            padding:20px;
+            border-radius:20px;
+        }
+
+        .boton{
+            margin-top:35px;
+        }
+
+        .boton a{
+            text-decoration:none;
+            color:white;
+            background:linear-gradient(45deg,#d40000,#ff5e5e);
+            padding:15px 35px;
+            border-radius:40px;
+            font-size:20px;
+            font-weight:bold;
+            transition:0.4s;
+            display:inline-block;
+        }
+
+        .boton a:hover{
+            background:white;
+            color:black;
+            transform:scale(1.1);
+        }
+
+
+        .contenido{
+            padding:60px 50px;
+            background:white;
+        }
+
+        .contenido h2{
+            text-align:center;
+            color:#c00000;
+            font-size:45px;
+            margin-bottom:40px;
+        }
+
+        .contenido p{
+            font-size:20px;
+            line-height:2;
+            text-align:justify;
+            margin-bottom:30px;
+        }
+
+
+        .lugares{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:30px;
+            margin-top:40px;
+        }
+
+        .card{
+            width:350px;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+            transition:0.5s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:230px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            color:#c00000;
+            padding:15px;
+            font-size:28px;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        footer{
+            background:#b30000;
+            color:white;
+            text-align:center;
+            padding:20px;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="portada">
+
+        <h1> Turismo en Suiza </h1>
+
+        <p>
+            Suiza es uno de los destinos turísticos más impresionantes de Europa.
+            Sus paisajes naturales, montañas nevadas, lagos cristalinos y ciudades
+            modernas hacen que millones de turistas visiten este país cada año.
+            Viajar por Suiza es como entrar a una postal gigante llena de naturaleza,
+            tranquilidad y cultura.
+        </p>
+
+        <div class="boton">
+            <a href="suizaa.html">REGRESAR</a>
+        </div>
+
+    </section>
+
+    <section class="contenido">
+
+        <h2>Lugares Turísticos Más Famosos</h2>
+
+        <p>
+            El turismo en Suiza es conocido por sus impresionantes Alpes Suizos,
+            donde las personas practican esquí, snowboard y senderismo.
+            Además, los turistas disfrutan viajar en trenes panorámicos que cruzan
+            montañas, túneles y lagos increíbles.
+        </p>
+
+        <p>
+            Las ciudades suizas también son muy visitadas por su limpieza,
+            seguridad y arquitectura. Cada rincón del país combina naturaleza
+            y modernidad, creando lugares únicos y muy hermosos.
+        </p>
+
+        <div class="lugares">
+
+            <div class="card">
+
+                <img src="alpes.jpg">
+
+                <h3> Alpes Suizos</h3>
+
+                <p>
+                    Los Alpes Suizos son famosos por sus enormes montañas cubiertas
+                    de nieve. Son perfectos para practicar deportes extremos,
+                    tomar fotografías y disfrutar de paisajes espectaculares.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="trenes.jpg">
+
+                <h3> Trenes Panorámicos</h3>
+
+                <p>
+                    Los trenes suizos permiten recorrer el país mientras se observan
+                    montañas, lagos y pueblos hermosos. Son considerados algunos
+                    de los mejores trenes turísticos del mundo.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="ciudad.jpg">
+
+                <h3> Ciudades Modernas</h3>
+
+                <p>
+                    Ciudades como Zúrich, Ginebra y Berna son conocidas por sus
+                    edificios modernos, calles limpias y una gran calidad de vida.
+                    También poseen museos y lugares históricos.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>

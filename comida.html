@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida de Suiza</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+
+        .portada{
+            height:100vh;
+            background:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("fondo3.jpg");
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .portada h1{
+            font-size:70px;
+            margin-bottom:20px;
+            text-shadow:4px 4px 10px black;
+        }
+
+        .portada p{
+            max-width:900px;
+            font-size:23px;
+            line-height:1.8;
+            background:rgba(0,0,0,0.4);
+            padding:20px;
+            border-radius:20px;
+        }
+
+
+        .boton{
+            margin-top:35px;
+        }
+
+        .boton a{
+            text-decoration:none;
+            color:white;
+            background:linear-gradient(45deg,#d40000,#ff5b5b);
+            padding:15px 35px;
+            border-radius:40px;
+            font-size:20px;
+            font-weight:bold;
+            transition:0.4s;
+            display:inline-block;
+        }
+
+        .boton a:hover{
+            background:white;
+            color:black;
+            transform:scale(1.1);
+        }
+
+
+        .contenido{
+            padding:60px 50px;
+            background:white;
+        }
+
+        .contenido h2{
+            text-align:center;
+            color:#c00000;
+            font-size:45px;
+            margin-bottom:40px;
+        }
+
+        .contenido p{
+            font-size:20px;
+            line-height:2;
+            text-align:justify;
+            margin-bottom:30px;
+        }
+
+        /* TARJETAS */
+
+        .comidas{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:30px;
+            margin-top:40px;
+        }
+
+        .card{
+            width:350px;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+            transition:0.5s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:230px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            color:#c00000;
+            padding:15px;
+            font-size:28px;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        footer{
+            background:#b30000;
+            color:white;
+            text-align:center;
+            padding:20px;
+            font-size:18px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="portada">
+
+        <h1> Comida Típica de Suiza </h1>
+
+        <p>
+            La gastronomía suiza es famosa en todo el mundo por sus deliciosos
+            chocolates, quesos y platos tradicionales. La comida en Suiza mezcla
+            sabores franceses, alemanes e italianos, creando recetas únicas y muy
+            reconocidas internacionalmente. Cada región del país tiene platos
+            especiales preparados con ingredientes frescos y naturales.
+        </p>
+
+        <div class="boton">
+            <a href="suizaa.html">REGRESAR</a>
+        </div>
+
+    </section>
+
+    <section class="contenido">
+
+        <h2>Platos y Dulces Más Famosos</h2>
+
+        <p>
+            Suiza es considerada uno de los países con mejor calidad en chocolates
+            y quesos. Muchas personas visitan este país para probar sus comidas
+            tradicionales y descubrir nuevos sabores. Además, los platos suizos
+            suelen prepararse con ingredientes naturales y recetas antiguas.
+        </p>
+
+        <p>
+            La comida suiza es muy variada. Existen platos calientes ideales para
+            el invierno, postres deliciosos y comidas típicas que representan la
+            cultura del país. La gastronomía forma una parte importante de la vida
+            cotidiana en Suiza.
+        </p>
+
+        <div class="comidas">
+
+            <div class="card">
+
+                <img src="fondue.jpg">
+
+                <h3> Fondue</h3>
+
+                <p>
+                    La fondue es uno de los platos más famosos de Suiza.
+                    Consiste en queso derretido servido caliente donde las personas
+                    mojan pan usando largos tenedores especiales.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="chocolate.jpg">
+
+                <h3> Chocolate Suizo</h3>
+
+                <p>
+                    El chocolate suizo es reconocido mundialmente por su calidad
+                    y sabor. En Suiza existen muchas fábricas y tiendas dedicadas
+                    a producir chocolates artesanales.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <img src="rosti.jpg">
+
+                <h3> Rösti</h3>
+
+                <p>
+                    El Rösti es un plato tradicional preparado con papas ralladas
+                    y fritas hasta quedar crujientes. Es una comida muy popular
+                    en diferentes regiones de Suiza.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

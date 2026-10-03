@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suiza - Página Principal</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: #f4f4f4;
+            color: white;
+        }
+
+      
+        header{
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("suizo.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header h1{
+            font-size: 70px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 10px black;
+        }
+
+        header p{
+            max-width: 900px;
+            font-size: 22px;
+            line-height: 1.8;
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        nav{
+            margin-top: 40px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            background: linear-gradient(45deg, #d40000, #ff4b4b);
+            padding: 15px 35px;
+            margin: 10px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            transition: 0.4s;
+            display: inline-block;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.4);
+        }
+
+        nav a:hover{
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #ffffff, #d40000);
+            color: black;
+        }
+
+        .contenido{
+            background: white;
+            color: black;
+            padding: 60px 40px;
+        }
+
+        .contenido h2{
+            text-align: center;
+            font-size: 45px;
+            color: #d40000;
+            margin-bottom: 30px;
+        }
+
+        .contenido p{
+            font-size: 20px;
+            line-height: 2;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        .galeria{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .galeria img{
+            width: 350px;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: 0.5s;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .galeria img:hover{
+            transform: scale(1.05);
+        }
+
+        footer{
+            background: #b30000;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1> SUIZA</h1>
+
+        <p>
+            Suiza es uno de los países más hermosos y organizados del mundo.
+            Se encuentra en Europa y es famosa por sus impresionantes montañas,
+            lagos cristalinos, ciudades modernas y su increíble calidad de vida.
+            Además, Suiza es reconocida mundialmente por sus chocolates, relojes,
+            quesos y paisajes naturales que parecen sacados de una película.
+            Este país combina naturaleza, cultura y tecnología de una manera única.
+        </p>
+
+        <nav>
+            <a href="turismo.html">Turismo</a>
+            <a href="comida.html">Comida</a>
+            <a href="cultura.html">Cultura</a>
+        </nav>
+    </header>
+
+    <section class="contenido">
+
+        <h2>Conoce Suiza</h2>
+
+        <p>
+            Suiza es un país lleno de historia, belleza natural y tradiciones.
+            Sus enormes montañas cubiertas de nieve atraen a millones de turistas
+            cada año. Muchas personas visitan Suiza para practicar esquí, senderismo
+            y disfrutar de los increíbles paisajes de los Alpes Suizos.
+        </p>
+
+        <p>
+            También es uno de los países más seguros del mundo y cuenta con ciudades
+            modernas como Zúrich, Ginebra y Berna. Los trenes suizos son famosos
+            por ser rápidos y puntuales, permitiendo recorrer el país mientras se
+            observan paisajes espectaculares llenos de lagos, bosques y montañas.
+        </p>
+
+        <p>
+            La cultura suiza es muy interesante porque mezcla influencias alemanas,
+            francesas e italianas. Además, sus habitantes valoran mucho la limpieza,
+            el respeto y la puntualidad. Suiza también es reconocida internacionalmente
+            por producir algunos de los mejores chocolates y relojes del planeta.
+        </p>
+
+        <div class="galeria">
+
+            <img src="suizaa.jpg">
+
+            <img src="suezia.jpg">
+
+            <img src="fondo.jpg">
+
+        </div>
+
+    </section>
+
+
+</body>
+</html>
